@@ -1,6 +1,6 @@
 module TopLevel (input logic clk,rst);
 
-    logic        PCsrc,reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken;
+    logic        reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken;
     logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW;
     logic [2:0]  ImmSrcD,funct3,funct3E,funct3M;
     logic [3:0]  mask;
@@ -12,7 +12,7 @@ module TopLevel (input logic clk,rst);
 
 
 Mux_PC MuxPC(
-    .PCsrc(PCsrc),
+    .br_taken(br_taken),
     .PCF(PCF),
     .ALUResultM(ALUResultM),
     .PC(PC));
@@ -188,9 +188,7 @@ MuxResult Muxresult(
     .wdata(wdata));
 
 controller Controller(
-    .br_taken(br_taken),
     .InstD(InstD),
-    .PCsrc(PCsrc),
     .reg_wr(reg_wr),
     .sel_A(sel_A),
     .sel_B(sel_B),

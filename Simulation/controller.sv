@@ -162,7 +162,7 @@ begin
         end
 
     endcase
-    PCsrc = Btype && br_taken;
+    PCsrc =  Btype && br_taken;
 end
     
 endmodule

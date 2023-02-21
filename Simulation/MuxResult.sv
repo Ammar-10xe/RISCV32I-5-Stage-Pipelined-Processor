@@ -1,5 +1,5 @@
 module MuxResult (
-    input logic  [1:0]  wb_selW, //From controller
+    input logic  [1:0]  wb_selW,
     input logic  [31:0] ALUResultW,rdataW,AddrWB,
     output logic [31:0] wdata
 );

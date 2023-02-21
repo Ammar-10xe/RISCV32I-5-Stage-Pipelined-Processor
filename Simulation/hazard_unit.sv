@@ -1,6 +1,8 @@
 module Hazard_Unit (
     input  logic       reg_wrM,reg_wrW,
-    input  logic [4:0] raddr1E,raddr2E,waddrM,waddrW, 
+    input logic  [1:0] wb_sel,
+    input  logic [4:0] raddr1D,raddr2D,raddr1E,raddr2E,waddrE,waddrM,waddrW,
+    output logic       StallF,StallD, 
     output logic [1:0] forwardAE,forwardBE
     
 );
@@ -12,6 +14,7 @@ module Hazard_Unit (
   assign rs2_valid = |raddr2E;
 
 // Hazard detection for forwarding 
+
   always_comb begin
     if ((( raddr1E == waddrM )  & (reg_wrM)) & (rs1_valid)) begin
       forwardAE = 2'b00;
@@ -38,35 +41,38 @@ module Hazard_Unit (
 
   end
 
-// //   always_comb begin
-// //     if (((Rs1E == RdM) && RegWriteM) && (Rs1E != 0) ) begin
-// //       ForwardAE <= 2'b10;
-// //     end
-// //     else if ( ((Rs1E == RdW) && RegWriteW) && (Rs1E != 0) ) begin
-// //       ForwardAE <= 2'b01;
-// //     end
-// //     else begin
-// //       ForwardAE <= 2'b00;
-// //     end
-
-// //   end
-
-// //   always_comb begin
-// //     if (((Rs2E == RdM) && RegWriteM) && (Rs2E != 0) ) begin
-// //       ForwardBE <= 2'b10;
-// //     end
-// //     else if ( ((Rs2E == RdW) && RegWriteW) && (Rs2E != 0) ) begin
-// //       ForwardBE <= 2'b01;
-// //     end
-// //     else begin
-// //       ForwardBE <= 2'b00;
-// //     end
-  
 // // Hazard detection for Stalling
-//   logic lwStall;
-//   assign  lwStall  = ( wb_selMW[1] & (( raddr1 == waddr_MW ) | ( raddr2 == waddr_MW )) & ( valid == 0) & (reg_wrMW));
-//   assign  Stall    = lwStall;
-//   assign  Stall_MW = lwStall;  
+
+always_comb begin 
+    //   lwStall <= (ResultSrcE[0] & ((Rs1D == RdE) | (Rs2D == RdE)));//Page 450
+    if (( ( wb_sel == 2'b10 ) & ((raddr1D == waddrE) | (raddr2D == waddrE))) ) begin 
+        StallD       = 1'b1;
+        StallF       = StallD;   
+    end
+    else begin
+        StallD       = 1'b0;
+        StallF       = StallD;   
+
+    end
+
+
+
+end
+
+
+  // always_comb begin//Stall when a load hazard occur
+  //   lwStall <= (ResultSrcE[0] & ((Rs1D == RdE) | (Rs2D == RdE)));//Page 450 
+  //   StallD <= lwStall;
+  //   StallF <= lwStall;
+  //   //Flush When a branch is taken or a load initroduces a bubble
+  //   FlushE <= lwStall | PCSrcE;
+  //   FlushD <= PCSrcE;
+  // end
+
+
+
+
+
 
 // //Flush When a branch is taken or a load initroduces a bubble
 // always_comb begin

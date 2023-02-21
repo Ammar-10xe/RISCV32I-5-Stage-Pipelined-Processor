@@ -4,7 +4,7 @@ module TopLevel (input logic clk,rst);
     logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW,forwardAE,forwardBE;
     logic [2:0]  ImmSrcD,funct3,funct3E,funct3M;
     logic [3:0]  mask;
-    logic [4:0]  raddr1,raddr2,waddr,waddrD,waddrE,waddrM,waddrW,alu_op,alu_opE;
+    logic [4:0]  raddr1,raddr1D,raddr1E,raddr2,raddr2D,raddr2E,waddr,waddrD,waddrE,waddrM,waddrW,alu_op,alu_opE;
     logic [6:0]  instr_opcode,instr_opcodeE,instr_opcodeM;
     logic [31:0] Addr,AddrD,AddrE,AddrM,AddrW,AddrWB,PC,Inst,InstD,InstE,InstM,InstW,PCF,wdata,rdata1,rdata1E,rdata2,rdata2E,rdata2M,ImmExtD,ImmExtE,SrcA,SrcAE,SrcB,SrcBE,ALUResult,ALUResultM,ALUResultW,rdata,rdataW,data_rd,addr,data_wr;
 
@@ -39,16 +39,16 @@ first_register FirstReg(
 
 Instruction_Fetch Fetch(
     .InstD(InstD),
-    .raddr1(raddr1),
-    .raddr2(raddr2),
+    .raddr1D(raddr1D),
+    .raddr2D(raddr2D),
     .waddrD(waddrD));
 
 Register_file RegsiterFile(
     .clk(clk),
     .rst(rst),
     .reg_wrW(reg_wrW),
-    .raddr1(raddr1),
-    .raddr2(raddr2),
+    .raddr1(raddr1D),
+    .raddr2(raddr2D),
     .waddr(waddrW),
     .wdata(wdata),
     .rdata1(rdata1),
@@ -68,6 +68,8 @@ second_register SecondReg(
     .wb_sel(wb_sel),
     .funct3(funct3),
     .alu_op(alu_op),
+    .raddr1D(raddr1D),
+    .raddr2D(raddr2D),
     .waddrD(waddrD),
     .instr_opcode(instr_opcode),
     .AddrD(AddrD),
@@ -81,6 +83,8 @@ second_register SecondReg(
     .wb_selE(wb_selE),
     .funct3E(funct3E),
     .alu_opE(alu_opE),
+    .raddr1E(raddr1E),
+    .raddr2E(raddr2E),
     .waddrE(waddrE),
     .instr_opcodeE(instr_opcodeE),
     .AddrE(AddrE),
@@ -221,8 +225,8 @@ controller Controller(
 Hazard_Unit HazardUnit(
     .reg_wrM(reg_wrM),
     .reg_wrW(reg_wrW),
-    .rdata1E(rdata1E),
-    .rdata2E(rdata2E),
+    .raddr1E(raddr1E),
+    .raddr2E(raddr2E),
     .waddrM(waddrM),
     .waddrW(waddrW),
     .forwardAE(forwardAE),

@@ -1,6 +1,6 @@
 module Hazard_Unit (
     input  logic       reg_wrM,reg_wrW,
-    input  logic [4:0] rdata1E,rdata2E,waddrM,waddrW, 
+    input  logic [4:0] raddr1E,raddr2E,waddrM,waddrW, 
     output logic [1:0] forwardAE,forwardBE
     
 );
@@ -8,15 +8,15 @@ module Hazard_Unit (
 // Check the validity of the source operands from EXE stage
   logic rs1_valid;
   logic rs2_valid;
-  assign rs1_valid = |rdata1E;
-  assign rs2_valid = |rdata2E;
+  assign rs1_valid = |raddr1E;
+  assign rs2_valid = |raddr2E;
 
 // Hazard detection for forwarding 
   always_comb begin
-    if ((( rdata1E == waddrM )  & (reg_wrM)) & (rs1_valid)) begin
+    if ((( raddr1E == waddrM )  & (reg_wrM)) & (rs1_valid)) begin
       forwardAE = 2'b00;
     end
-    else if ((( rdata1E == waddrW )  & (reg_wrW)) & (rs1_valid)) begin
+    else if ((( raddr1E == waddrW )  & (reg_wrW)) & (rs1_valid)) begin
       forwardAE = 2'b10;
     end
     else begin
@@ -26,10 +26,10 @@ module Hazard_Unit (
   end
 
   always_comb begin
-    if ((( rdata2E == waddrM )  & (reg_wrM)) & (rs2_valid)) begin
+    if ((( raddr2E == waddrM )  & (reg_wrM)) & (rs2_valid)) begin
       forwardBE = 2'b00;
     end
-    else if ((( rdata2E == waddrW )  & (reg_wrW)) & (rs2_valid)) begin
+    else if ((( raddr2E == waddrW )  & (reg_wrW)) & (rs2_valid)) begin
       forwardBE = 2'b10;
     end
     else begin

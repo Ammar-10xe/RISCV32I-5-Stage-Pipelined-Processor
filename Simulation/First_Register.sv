@@ -9,13 +9,7 @@ module first_register (
             AddrD <= 32'b0;
             InstD <= 32'b0;
         end
-        // else if(StallD) begin
-        //     AddrD <= AddrD;
-        //     InstD <= InstD;
-        // end
-        // else if (FlushD) begin
-        //     InstD <= 32'h00000013;
-        // end
+
         else begin
             AddrD <= Addr;
             InstD <= Inst;

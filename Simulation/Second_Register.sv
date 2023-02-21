@@ -2,17 +2,19 @@ module second_register (
     input  logic         clk,rst,reg_wr,sel_A,sel_B,
     input  logic [1:0]  wb_sel,
     input  logic [2:0]  funct3,
-    input  logic [4:0]  alu_op,
+    input  logic [4:0]  alu_op,waddrD,
     input  logic [6:0]  instr_opcode,
     input  logic [31:0] AddrD,rdata1,rdata2,ImmExtD,InstD,
     output logic        reg_wrE,sel_AE,sel_BE,
     output logic [1:0]  wb_selE,
     output logic [2:0]  funct3E,
-    output logic [4:0]  alu_opE,
+    output logic [4:0]  alu_opE,waddrE,
     output logic [6:0]  instr_opcodeE,
     output logic [31:0] AddrE,rdata1E,rdata2E,ImmExtE,InstE
 
 );
+// assign waddrE  = InstE [11:7]; 
+
     always_ff @( posedge clk ) begin 
         if ( rst ) begin
             AddrE         <= 32'b0;
@@ -27,6 +29,7 @@ module second_register (
             funct3E       <= 3'bx;
             instr_opcodeE <= 7'bx;
             alu_opE       <= 5'b0;
+            waddrE        <= 5'b0;
 
         end
         else begin
@@ -42,7 +45,7 @@ module second_register (
             funct3E       <= funct3;
             instr_opcodeE <= instr_opcode;
             alu_opE       <= alu_op;
-            
+            waddrE        <= waddrD;
         end
 
     end

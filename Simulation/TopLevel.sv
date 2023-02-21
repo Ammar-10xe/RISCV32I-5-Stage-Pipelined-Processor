@@ -4,7 +4,7 @@ module TopLevel (input logic clk,rst);
     logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW,forwardAE,forwardBE;
     logic [2:0]  ImmSrcD,funct3,funct3E,funct3M;
     logic [3:0]  mask;
-    logic [4:0]  raddr1,raddr2,waddr,alu_op,alu_opE;
+    logic [4:0]  raddr1,raddr2,waddr,waddrD,waddrE,waddrM,waddrW,alu_op,alu_opE;
     logic [6:0]  instr_opcode,instr_opcodeE,instr_opcodeM;
     logic [31:0] Addr,AddrD,AddrE,AddrM,AddrW,AddrWB,PC,Inst,InstD,InstE,InstM,InstW,PCF,wdata,rdata1,rdata1E,rdata2,rdata2E,rdata2M,ImmExtD,ImmExtE,SrcA,SrcAE,SrcB,SrcBE,ALUResult,ALUResultM,ALUResultW,rdata,rdataW,data_rd,addr,data_wr;
 
@@ -40,7 +40,8 @@ first_register FirstReg(
 Instruction_Fetch Fetch(
     .InstD(InstD),
     .raddr1(raddr1),
-    .raddr2(raddr2));
+    .raddr2(raddr2),
+    .waddrD(waddrD));
 
 Register_file RegsiterFile(
     .clk(clk),
@@ -48,7 +49,7 @@ Register_file RegsiterFile(
     .reg_wrW(reg_wrW),
     .raddr1(raddr1),
     .raddr2(raddr2),
-    .waddr(waddr),
+    .waddr(waddrW),
     .wdata(wdata),
     .rdata1(rdata1),
     .rdata2(rdata2));
@@ -67,6 +68,7 @@ second_register SecondReg(
     .wb_sel(wb_sel),
     .funct3(funct3),
     .alu_op(alu_op),
+    .waddrD(waddrD),
     .instr_opcode(instr_opcode),
     .AddrD(AddrD),
     .rdata1(rdata1),
@@ -79,6 +81,7 @@ second_register SecondReg(
     .wb_selE(wb_selE),
     .funct3E(funct3E),
     .alu_opE(alu_opE),
+    .waddrE(waddrE),
     .instr_opcodeE(instr_opcodeE),
     .AddrE(AddrE),
     .rdata1E(rdata1E),
@@ -133,6 +136,7 @@ third_register ThirdReg(
     .reg_wrE(reg_wrE),
     .wb_selE(wb_selE),
     .funct3E(funct3E),
+    .waddrE(waddrE),
     .instr_opcodeE(instr_opcodeE),
     .AddrE(AddrE),
     .ALUResult(ALUResult),
@@ -141,6 +145,7 @@ third_register ThirdReg(
     .reg_wrM(reg_wrM),
     .wb_selM(wb_selM),
     .funct3M(funct3M),
+    .waddrM(waddrM),
     .instr_opcodeM(instr_opcodeM),
     .AddrM(AddrM),
     .ALUResultM(ALUResultM),
@@ -177,13 +182,14 @@ fourt_register FourtReg(
     .rst(rst),
     .reg_wrM(reg_wrM),
     .wb_selM(wb_selM),
+    .waddrM(waddrM),
     .AddrM(AddrM),
     .ALUResultM(ALUResultM),
     .rdata(rdata),
     .InstM(InstM),
     .reg_wrW(reg_wrW),
     .wb_selW(wb_selW),
-    .waddr(waddr),
+    .waddrW(waddrW),
     .AddrW(AddrW),
     .ALUResultW(ALUResultW),
     .rdataW(rdataW),
@@ -211,6 +217,17 @@ controller Controller(
     .funct3(funct3),
     .alu_op(alu_op),
     .instr_opcode(instr_opcode));
+
+Hazard_Unit HazardUnit(
+    .reg_wrM(reg_wrM),
+    .reg_wrW(reg_wrW),
+    .rdata1E(rdata1E),
+    .rdata2E(rdata2E),
+    .waddrM(waddrM),
+    .waddrW(waddrW),
+    .forwardAE(forwardAE),
+    .forwardBE(forwardBE)
+);
 
 
 

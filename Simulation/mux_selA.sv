@@ -1,12 +1,12 @@
 module mux_selA (
-    input logic         sel_AE, //from controller
-    input logic  [31:0] rdata1E,AddrE,
-    output logic [31:0] SrcA
+    input logic         sel_AE,
+    input logic  [31:0] SrcA,AddrE,
+    output logic [31:0] SrcAE
 );
 always_comb begin 
     case (sel_AE)
-       1'b0 : SrcA = AddrE;
-       1'b1 : SrcA = rdata1E;
+       1'b0 : SrcAE = AddrE;
+       1'b1 : SrcAE = SrcA;
     endcase  
 end
 endmodule

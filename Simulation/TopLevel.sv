@@ -1,14 +1,12 @@
 module TopLevel (input logic clk,rst);
 
     logic        reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken;
-    logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW;
+    logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW,forwardAE,forwardBE;
     logic [2:0]  ImmSrcD,funct3,funct3E,funct3M;
     logic [3:0]  mask;
     logic [4:0]  raddr1,raddr2,waddr,alu_op,alu_opE;
     logic [6:0]  instr_opcode,instr_opcodeE,instr_opcodeM;
-    logic [31:0] Addr,AddrD,AddrE,AddrM,AddrW,AddrWB,PC,Inst,InstD,InstE,InstM,InstW,PCF,wdata,rdata1,rdata1E,rdata2,rdata2E,rdata2M,ImmExtD,ImmExtE,SrcA,SrcB,ALUResult,ALUResultM,ALUResultW,rdata,rdataW,data_rd,addr,data_wr;
-
-
+    logic [31:0] Addr,AddrD,AddrE,AddrM,AddrW,AddrWB,PC,Inst,InstD,InstE,InstM,InstW,PCF,wdata,rdata1,rdata1E,rdata2,rdata2E,rdata2M,ImmExtD,ImmExtE,SrcA,SrcAE,SrcB,SrcBE,ALUResult,ALUResultM,ALUResultW,rdata,rdataW,data_rd,addr,data_wr;
 
 
 Mux_PC MuxPC(
@@ -88,29 +86,45 @@ second_register SecondReg(
     .ImmExtE(ImmExtE),
     .InstE(InstE));
 
+forward_muxA Forwd_MuxA(
+    .forwardAE(forwardAE),
+    .rdata1E(rdata1E),
+    .ALUResultM(ALUResultM),
+    .wdata(wdata),
+    .SrcA(SrcA)
+);
+
+forward_muxB Forwd_MuxB(
+    .forwardBE(forwardBE),
+    .rdata2E(rdata2E),
+    .ALUResultM(ALUResultM),
+    .wdata(wdata),
+    .SrcB(SrcB)
+);
+
 mux_selA MuxselA(
     .sel_AE(sel_AE),
-    .rdata1E(rdata1E),
+    .SrcA(SrcA),
     .AddrE(AddrE),
-    .SrcA(SrcA));
+    .SrcAE(SrcAE));
 
 mux_selB MuxselB(
     .sel_BE(sel_BE),
     .ImmExtE(ImmExtE),
-    .rdata2E(rdata2E),
-    .SrcB(SrcB));
+    .SrcB(SrcB),
+    .SrcBE(SrcBE));
 
 BranchCond Branchcond(
     .funct3E(funct3E),
     .instr_opcodeE(instr_opcodeE),
-    .rdata1E(rdata1E),
-    .rdata2E(rdata2E),
+    .SrcA(SrcA),
+    .SrcB(SrcB),
     .br_taken(br_taken));
 
 ALU Alu(
     .alu_opE(alu_opE),
-    .SrcA(SrcA),
-    .SrcB(SrcB),
+    .SrcAE(SrcAE),
+    .SrcBE(SrcBE),
     .ALUResult(ALUResult));
 
 third_register ThirdReg(

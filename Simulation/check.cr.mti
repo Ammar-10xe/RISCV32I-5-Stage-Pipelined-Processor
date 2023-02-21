@@ -1,1 +1,134 @@
+C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxPC.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxPC.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Mux_PC
 
+Top level modules:
+	Mux_PC
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Immediate_Gen.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Immediate_Gen.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module immediate_gen
+
+Top level modules:
+	immediate_gen
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxResult.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxResult.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module MuxResult
+
+Top level modules:
+	MuxResult
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/AddrW_Plus4.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/AddrW_Plus4.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module AddrW_Plus4
+
+Top level modules:
+	AddrW_Plus4
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Data_Memory.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Data_Memory.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Data_Memory
+
+Top level modules:
+	Data_Memory
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/ALU.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/ALU.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/PCPlus4.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/PCPlus4.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module PCPlus4
+
+Top level modules:
+	PCPlus4
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Register_file.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Register_file.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Register_file
+
+Top level modules:
+	Register_file
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/First_Register.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/First_Register.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module first_register
+
+Top level modules:
+	first_register
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/controller.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/controller.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Third_Register.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Third_Register.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module third_register
+
+Top level modules:
+	third_register
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/program_Counter.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/program_Counter.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module program_counter
+
+Top level modules:
+	program_counter
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel_tb.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module TopLevel_tb
+
+Top level modules:
+	TopLevel_tb
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Second_Register.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Second_Register.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module second_register
+
+Top level modules:
+	second_register
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Instruction_Memory.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Instruction_Memory.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Instruction_Memory
+
+Top level modules:
+	Instruction_Memory
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/BranchCond.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/BranchCond.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module BranchCond
+
+Top level modules:
+	BranchCond
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/LoadStore_Unit.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/LoadStore_Unit.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module LoadStore_Unit
+
+Top level modules:
+	LoadStore_Unit
+
+} {} {}} {C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/instruction fetch.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/instruction fetch.sv}
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Instruction_Fetch
+
+Top level modules:
+	Instruction_Fetch
+
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Fourth_Register.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Fourth_Register.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module fourt_register
+
+Top level modules:
+	fourt_register
+
+} {} {}}

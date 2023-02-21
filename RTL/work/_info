@@ -1,0 +1,573 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/questasim64_2021.1/examples
+T_opt
+!s110 1676990585
+VeI;lNYW31BnT=GmK1nVnz1
+04 11 4 work TopLevel_tb fast 0
+=1-3822e2f179b7-63f4d878-32d-9e98
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+R1
+vAddrW_Plus4
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1676992143
+!i10b 1
+!s100 X90aE>4Xa73ERnc?Kk>no3
+IXZImCoUoF^K^DgK7PbHC22
+S1
+Z5 dC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL
+w1676838450
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/AddrW_Plus4.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/AddrW_Plus4.sv
+!i122 580
+Z6 L0 1 8
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.1;73
+r1
+!s85 0
+31
+!s108 1676992142.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/AddrW_Plus4.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/AddrW_Plus4.sv|
+!i113 0
+Z9 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@addr@w_@plus4
+vALU
+R3
+R4
+!i10b 1
+!s100 F]V1=Qh@>?QAEAmSEEmT^0
+I0N`JWX2XES]X8@:;`18Rn2
+S1
+R5
+w1676986196
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/ALU.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/ALU.sv
+!i122 581
+L0 1 37
+R7
+R8
+r1
+!s85 0
+31
+Z10 !s108 1676992143.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/ALU.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/ALU.sv|
+!i113 0
+R9
+R2
+n@a@l@u
+vBranchCond
+R3
+R4
+!i10b 1
+!s100 fY:@M`>E]_[Bj<ZNz2>LE1
+I16ZLB@?j;?`VJ8A]e1EP91
+S1
+R5
+w1676985665
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/BranchCond.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/BranchCond.sv
+!i122 582
+L0 1 45
+R7
+R8
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/BranchCond.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/BranchCond.sv|
+!i113 0
+R9
+R2
+n@branch@cond
+vcontroller
+R3
+R4
+!i10b 1
+!s100 aS4BMl3TdN^AceGLz:U?A3
+IJc=^aF:K8kI`0MHF0Ao:`2
+S1
+R5
+w1676986507
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/controller.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/controller.sv
+!i122 583
+L0 1 168
+R7
+R8
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/controller.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/controller.sv|
+!i113 0
+R9
+R2
+vData_Memory
+R3
+Z11 !s110 1676992144
+!i10b 1
+!s100 jO80g0l[4JLMnE621YK^C3
+Io:H`W=l0H1HKSKAf4FL>41
+S1
+R5
+Z12 w1676829494
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Data_Memory.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Data_Memory.sv
+!i122 584
+L0 1 22
+R7
+R8
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Data_Memory.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Data_Memory.sv|
+!i113 0
+R9
+R2
+n@data_@memory
+vfirst_register
+R3
+R11
+!i10b 1
+!s100 X:ODDD<mAK719mCWUBFNO1
+I7zW2@KQ[oYW@OUWlhmQ[[1
+S1
+R5
+w1676832310
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/First_Register.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/First_Register.sv
+!i122 585
+L0 1 25
+R7
+R8
+r1
+!s85 0
+31
+Z13 !s108 1676992144.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/First_Register.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/First_Register.sv|
+!i113 0
+R9
+R2
+vfourt_register
+R3
+R11
+!i10b 1
+!s100 ANW8O<MQ<70;JS70Pah1D0
+IBOPkOPGC:8g3?bDM7K3[<3
+S1
+R5
+w1676984922
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Fourth_Register.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Fourth_Register.sv
+!i122 586
+L0 1 34
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Fourth_Register.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Fourth_Register.sv|
+!i113 0
+R9
+R2
+vimmediate_gen
+R3
+R11
+!i10b 1
+!s100 jjVgB7JTQi`z>JK29UV8]2
+ITkf?fCOZD0VZiMz]Z[imF3
+S1
+R5
+w1676831792
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Immediate_Gen.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Immediate_Gen.sv
+!i122 587
+L0 1 26
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Immediate_Gen.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Immediate_Gen.sv|
+!i113 0
+R9
+R2
+vInstruction_Fetch
+R3
+Z14 !s110 1676992145
+!i10b 1
+!s100 PXbFZ7bfgdFP6MXS2;8:23
+I^GJ_4C033a=G;8AFnRGFS0
+S1
+R5
+w1676984628
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/instruction fetch.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/instruction fetch.sv
+!i122 588
+L0 1 11
+R7
+R8
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/instruction fetch.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/instruction fetch.sv|
+!i113 0
+R9
+R2
+n@instruction_@fetch
+vInstruction_Memory
+R3
+R14
+!i10b 1
+!s100 cM9Yo43jgQOEJeKo5Gz3C0
+Ik3lhM[cmW@M9<EmkTF4hF3
+S1
+R5
+R12
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Instruction_Memory.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Instruction_Memory.sv
+!i122 589
+Z15 L0 1 13
+R7
+R8
+r1
+!s85 0
+31
+Z16 !s108 1676992145.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Instruction_Memory.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Instruction_Memory.sv|
+!i113 0
+R9
+R2
+n@instruction_@memory
+vLoadStore_Unit
+R3
+R14
+!i10b 1
+!s100 HhcM^BQ?z;784VNCzHzNF0
+IJdP]44cNo4ZhkaomXhjc80
+S1
+R5
+w1676985962
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/LoadStore_Unit.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/LoadStore_Unit.sv
+!i122 590
+L0 1 121
+R7
+R8
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/LoadStore_Unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/LoadStore_Unit.sv|
+!i113 0
+R9
+R2
+n@load@store_@unit
+vMux_PC
+R3
+!s110 1676992150
+!i10b 1
+!s100 zkjXe^z:kiho]bLdi;PIF0
+IMfOK`@UfBV]0ini>9n?XM0
+S1
+R5
+w1676834594
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/MuxPC.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/MuxPC.sv
+!i122 593
+Z17 L0 1 14
+R7
+R8
+r1
+!s85 0
+31
+Z18 !s108 1676992150.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/MuxPC.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/MuxPC.sv|
+!i113 0
+R9
+R2
+n@mux_@p@c
+vmux_selA
+R3
+!s110 1676992148
+!i10b 1
+!s100 cHo4YhnQVX_gKLF?c9jS[0
+I9[lmWe4mFf7VF^GkJBIFM0
+S1
+R5
+w1676984442
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/mux_selA.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/mux_selA.sv
+!i122 591
+L0 1 12
+R7
+R8
+r1
+!s85 0
+31
+!s108 1676992148.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/mux_selA.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/mux_selA.sv|
+!i113 0
+R9
+R2
+nmux_sel@a
+vmux_selB
+R3
+!s110 1676992149
+!i10b 1
+!s100 1Bl[Kj>@l86>;b;6=WN6=3
+I8@1@[9gc1ET59T;h93?a`1
+S1
+R5
+w1676984452
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/mux_selB.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/mux_selB.sv
+!i122 592
+L0 1 15
+R7
+R8
+r1
+!s85 0
+31
+!s108 1676992149.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/mux_selB.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/mux_selB.sv|
+!i113 0
+R9
+R2
+nmux_sel@b
+vMuxResult
+R3
+Z19 !s110 1676992151
+!i10b 1
+!s100 ?BBH3CJME8d?:]YfXMNE92
+IlWA?5gmO[<n8LA@R[6hmM0
+S1
+R5
+w1676990207
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/MuxResult.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/MuxResult.sv
+!i122 594
+R17
+R7
+R8
+r1
+!s85 0
+31
+R18
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/MuxResult.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/MuxResult.sv|
+!i113 0
+R9
+R2
+n@mux@result
+vPCPlus4
+R3
+R19
+!i10b 1
+!s100 dh[jHS`Z[D5bENBOQHBSY2
+I`5Djh=l1Lb:?izhBnG[VJ2
+S1
+R5
+w1676835275
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/PCPlus4.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/PCPlus4.sv
+!i122 595
+R6
+R7
+R8
+r1
+!s85 0
+31
+Z20 !s108 1676992151.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/PCPlus4.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/PCPlus4.sv|
+!i113 0
+R9
+R2
+n@p@c@plus4
+vprogram_counter
+R3
+R19
+!i10b 1
+!s100 R3:J;l9Eg2MSlCJ_EI2`b1
+I_BQQf_G?h`YjQ6>YDlZ5Y1
+S1
+R5
+R12
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/program_Counter.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/program_Counter.sv
+!i122 596
+R15
+R7
+R8
+r1
+!s85 0
+31
+R20
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/program_Counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/program_Counter.sv|
+!i113 0
+R9
+R2
+vRegister_file
+R3
+!s110 1676992152
+!i10b 1
+!s100 ChHWz@P8>TzdUVEzmaB9m1
+I@P4[Z4cKPXLI?=bO?nlMf0
+S1
+R5
+w1676989203
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Register_file.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Register_file.sv
+!i122 597
+L0 1 29
+R7
+R8
+r1
+!s85 0
+31
+Z21 !s108 1676992152.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Register_file.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Register_file.sv|
+!i113 0
+R9
+R2
+n@register_file
+vsecond_register
+R3
+Z22 !s110 1676992153
+!i10b 1
+!s100 D7JfVjzAERZPSWUM4[XIJ0
+IURB`B=Y=A8jFoKcTj7lde0
+S1
+R5
+w1676986189
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Second_Register.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Second_Register.sv
+!i122 598
+L0 1 50
+R7
+R8
+r1
+!s85 0
+31
+R21
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Second_Register.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Second_Register.sv|
+!i113 0
+R9
+R2
+vthird_register
+R3
+R22
+!i10b 1
+!s100 0:8T6mLDio=N55KflXIZl1
+I<S8izTG4le9HeM`1REFbg0
+S1
+R5
+w1676988011
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Third_Register.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Third_Register.sv
+!i122 599
+L0 1 36
+R7
+R8
+r1
+!s85 0
+31
+Z23 !s108 1676992153.000000
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Third_Register.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/Third_Register.sv|
+!i113 0
+R9
+R2
+vTopLevel
+R3
+R22
+!i10b 1
+!s100 hezi[Yj9NHRloS9E>CDSc1
+InH9XzTh8`ETFX8QP]Q3n=2
+S1
+R5
+w1676990569
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/TopLevel.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/TopLevel.sv
+!i122 600
+L0 1 205
+R7
+R8
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/TopLevel.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/TopLevel.sv|
+!i113 0
+R9
+R2
+n@top@level
+vTopLevel_tb
+R3
+R22
+!i10b 1
+!s100 bVY]5B<VjC83=VzVzUkXF2
+I=d;cfHINj@EbdU41^6bU?1
+S1
+R5
+R12
+8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/TopLevel_tb.sv
+FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/TopLevel_tb.sv
+!i122 601
+L0 1 19
+R7
+R8
+r1
+!s85 0
+31
+R23
+!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/TopLevel_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RTL/TopLevel_tb.sv|
+!i113 0
+R9
+R2
+n@top@level_tb

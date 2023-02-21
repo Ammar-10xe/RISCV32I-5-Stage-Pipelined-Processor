@@ -1,16 +1,18 @@
 module TopLevel (input logic clk,rst);
 
-    logic        reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken;
-    logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW,forwardAE,forwardBE;
+    logic        PCsrc,reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken;
+    logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW;
     logic [2:0]  ImmSrcD,funct3,funct3E,funct3M;
     logic [3:0]  mask;
-    logic [4:0]  raddr1,raddr1D,raddr1E,raddr2,raddr2D,raddr2E,waddr,waddrD,waddrE,waddrM,waddrW,alu_op,alu_opE;
+    logic [4:0]  raddr1,raddr2,waddr,alu_op,alu_opE;
     logic [6:0]  instr_opcode,instr_opcodeE,instr_opcodeM;
-    logic [31:0] Addr,AddrD,AddrE,AddrM,AddrW,AddrWB,PC,Inst,InstD,InstE,InstM,InstW,PCF,wdata,rdata1,rdata1E,rdata2,rdata2E,rdata2M,ImmExtD,ImmExtE,SrcA,SrcAE,SrcB,SrcBE,ALUResult,ALUResultM,ALUResultW,rdata,rdataW,data_rd,addr,data_wr;
+    logic [31:0] Addr,AddrD,AddrE,AddrM,AddrW,AddrWB,PC,Inst,InstD,InstE,InstM,InstW,PCF,wdata,rdata1,rdata1E,rdata2,rdata2E,rdata2M,ImmExtD,ImmExtE,SrcA,SrcB,ALUResult,ALUResultM,ALUResultW,rdata,rdataW,data_rd,addr,data_wr;
+
+
 
 
 Mux_PC MuxPC(
-    .br_taken(br_taken),
+    .PCsrc(PCsrc),
     .PCF(PCF),
     .ALUResultM(ALUResultM),
     .PC(PC));
@@ -39,17 +41,16 @@ first_register FirstReg(
 
 Instruction_Fetch Fetch(
     .InstD(InstD),
-    .raddr1D(raddr1D),
-    .raddr2D(raddr2D),
-    .waddrD(waddrD));
+    .raddr1(raddr1),
+    .raddr2(raddr2));
 
 Register_file RegsiterFile(
     .clk(clk),
     .rst(rst),
     .reg_wrW(reg_wrW),
-    .raddr1(raddr1D),
-    .raddr2(raddr2D),
-    .waddr(waddrW),
+    .raddr1(raddr1),
+    .raddr2(raddr2),
+    .waddr(waddr),
     .wdata(wdata),
     .rdata1(rdata1),
     .rdata2(rdata2));
@@ -68,9 +69,6 @@ second_register SecondReg(
     .wb_sel(wb_sel),
     .funct3(funct3),
     .alu_op(alu_op),
-    .raddr1D(raddr1D),
-    .raddr2D(raddr2D),
-    .waddrD(waddrD),
     .instr_opcode(instr_opcode),
     .AddrD(AddrD),
     .rdata1(rdata1),
@@ -83,9 +81,6 @@ second_register SecondReg(
     .wb_selE(wb_selE),
     .funct3E(funct3E),
     .alu_opE(alu_opE),
-    .raddr1E(raddr1E),
-    .raddr2E(raddr2E),
-    .waddrE(waddrE),
     .instr_opcodeE(instr_opcodeE),
     .AddrE(AddrE),
     .rdata1E(rdata1E),
@@ -93,45 +88,29 @@ second_register SecondReg(
     .ImmExtE(ImmExtE),
     .InstE(InstE));
 
-forward_muxA Forwd_MuxA(
-    .forwardAE(forwardAE),
-    .rdata1E(rdata1E),
-    .ALUResultM(ALUResultM),
-    .wdata(wdata),
-    .SrcA(SrcA)
-);
-
-forward_muxB Forwd_MuxB(
-    .forwardBE(forwardBE),
-    .rdata2E(rdata2E),
-    .ALUResultM(ALUResultM),
-    .wdata(wdata),
-    .SrcB(SrcB)
-);
-
 mux_selA MuxselA(
     .sel_AE(sel_AE),
-    .SrcA(SrcA),
+    .rdata1E(rdata1E),
     .AddrE(AddrE),
-    .SrcAE(SrcAE));
+    .SrcA(SrcA));
 
 mux_selB MuxselB(
     .sel_BE(sel_BE),
     .ImmExtE(ImmExtE),
-    .SrcB(SrcB),
-    .SrcBE(SrcBE));
+    .rdata2E(rdata2E),
+    .SrcB(SrcB));
 
 BranchCond Branchcond(
     .funct3E(funct3E),
     .instr_opcodeE(instr_opcodeE),
-    .SrcA(SrcA),
-    .SrcB(SrcB),
+    .rdata1E(rdata1E),
+    .rdata2E(rdata2E),
     .br_taken(br_taken));
 
 ALU Alu(
     .alu_opE(alu_opE),
-    .SrcAE(SrcAE),
-    .SrcBE(SrcBE),
+    .SrcA(SrcA),
+    .SrcB(SrcB),
     .ALUResult(ALUResult));
 
 third_register ThirdReg(
@@ -140,7 +119,6 @@ third_register ThirdReg(
     .reg_wrE(reg_wrE),
     .wb_selE(wb_selE),
     .funct3E(funct3E),
-    .waddrE(waddrE),
     .instr_opcodeE(instr_opcodeE),
     .AddrE(AddrE),
     .ALUResult(ALUResult),
@@ -149,7 +127,6 @@ third_register ThirdReg(
     .reg_wrM(reg_wrM),
     .wb_selM(wb_selM),
     .funct3M(funct3M),
-    .waddrM(waddrM),
     .instr_opcodeM(instr_opcodeM),
     .AddrM(AddrM),
     .ALUResultM(ALUResultM),
@@ -186,14 +163,13 @@ fourt_register FourtReg(
     .rst(rst),
     .reg_wrM(reg_wrM),
     .wb_selM(wb_selM),
-    .waddrM(waddrM),
     .AddrM(AddrM),
     .ALUResultM(ALUResultM),
     .rdata(rdata),
     .InstM(InstM),
     .reg_wrW(reg_wrW),
     .wb_selW(wb_selW),
-    .waddrW(waddrW),
+    .waddr(waddr),
     .AddrW(AddrW),
     .ALUResultW(ALUResultW),
     .rdataW(rdataW),
@@ -212,7 +188,9 @@ MuxResult Muxresult(
     .wdata(wdata));
 
 controller Controller(
+    .br_taken(br_taken),
     .InstD(InstD),
+    .PCsrc(PCsrc),
     .reg_wr(reg_wr),
     .sel_A(sel_A),
     .sel_B(sel_B),
@@ -221,17 +199,6 @@ controller Controller(
     .funct3(funct3),
     .alu_op(alu_op),
     .instr_opcode(instr_opcode));
-
-Hazard_Unit HazardUnit(
-    .reg_wrM(reg_wrM),
-    .reg_wrW(reg_wrW),
-    .raddr1E(raddr1E),
-    .raddr2E(raddr2E),
-    .waddrM(waddrM),
-    .waddrW(waddrW),
-    .forwardAE(forwardAE),
-    .forwardBE(forwardBE)
-);
 
 
 

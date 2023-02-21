@@ -1,16 +1,15 @@
 module fourt_register (
     input logic         clk,rst,reg_wrM,
     input logic  [1:0]  wb_selM,
-    input logic  [4:0]  waddrM,
     input logic  [31:0] AddrM,ALUResultM,rdata,InstM,
     output logic        reg_wrW,
     output logic [1:0]  wb_selW,
-    output logic [4:0]  waddrW,
+    output logic [4:0]  waddr,
     output logic [31:0] AddrW,ALUResultW,rdataW,InstW
  
 );
 
-  // assign waddrW  = InstW [11:7]; 
+  assign waddr  = InstW [11:7]; 
 
   always_ff @(posedge clk) begin
     if( rst ) begin
@@ -20,7 +19,6 @@ module fourt_register (
         InstW      <= 32'b0;
         reg_wrW    <= 1'b0;
         wb_selW    <= 2'bx;
-        waddrW     <= 5'b0;
   end
     else begin
         AddrW      <= AddrM;
@@ -29,7 +27,6 @@ module fourt_register (
         InstW      <= InstM;
         reg_wrW    <= reg_wrM;
         wb_selW    <= wb_selM;
-        waddrW     <= waddrM;
       end
   end
 

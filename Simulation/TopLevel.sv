@@ -1,6 +1,6 @@
 module TopLevel (input logic clk,rst);
 
-    logic        reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken,StallF,StallD;
+    logic        reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken,StallF,StallD,FlushD,FlushE;
     logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW,forwardAE,forwardBE;
     logic [2:0]  ImmSrcD,funct3,funct3E,funct3M;
     logic [3:0]  mask;
@@ -11,7 +11,7 @@ module TopLevel (input logic clk,rst);
 Mux_PC MuxPC(
     .br_taken(br_taken),
     .PCF(PCF),
-    .ALUResultM(ALUResultM),
+    .ALUResultM(ALUResult),
     .PC(PC));
 
 PCPlus4 PCplus4 (
@@ -33,6 +33,7 @@ first_register FirstReg(
     .clk(clk),
     .rst(rst),
     .StallD(StallD),
+    .FlushD(FlushD),
     .Addr(Addr),
     .Inst(Inst),
     .AddrD(AddrD),
@@ -66,6 +67,7 @@ second_register SecondReg(
     .reg_wr(reg_wr),
     .sel_A(sel_A),
     .sel_B(sel_B),
+    .FlushE(FlushE),
     .wb_sel(wb_sel),
     .funct3(funct3),
     .alu_op(alu_op),
@@ -227,6 +229,7 @@ controller Controller(
 Hazard_Unit HazardUnit(
     .reg_wrM(reg_wrM),
     .reg_wrW(reg_wrW),
+    .br_taken(br_taken),
     .wb_sel(wb_selE),
     .raddr1D(raddr1D),
     .raddr2D(raddr2D),
@@ -237,6 +240,8 @@ Hazard_Unit HazardUnit(
     .waddrW(waddrW),
     .StallF(StallF),
     .StallD(StallD),
+    .FlushD(FlushD),
+    .FlushE(FlushE),
     .forwardAE(forwardAE),
     .forwardBE(forwardBE)
 );

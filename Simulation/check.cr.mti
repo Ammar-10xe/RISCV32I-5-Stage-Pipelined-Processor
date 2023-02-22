@@ -26,6 +26,13 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	immediate_gen
 
+} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/hazard_unit.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/hazard_unit.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Hazard_Unit
+
+Top level modules:
+	Hazard_Unit
+
 } {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxResult.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxResult.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling module MuxResult
@@ -82,13 +89,6 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 Top level modules:
 	Register_file
 
-} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/First_Register.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/First_Register.sv
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module first_register
-
-Top level modules:
-	first_register
-
 } {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Third_Register.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Third_Register.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 -- Compiling module third_register
@@ -123,13 +123,6 @@ QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
 
 Top level modules:
 	TopLevel_tb
-
-} {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Second_Register.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Second_Register.sv
-QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
--- Compiling module second_register
-
-Top level modules:
-	second_register
 
 } {} {}} C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/BranchCond.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/BranchCond.sv
 QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021

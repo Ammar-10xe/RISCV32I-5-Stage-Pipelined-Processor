@@ -1,8 +1,8 @@
 module Hazard_Unit (
-    input  logic       reg_wrM,reg_wrW,
+    input  logic       reg_wrM,reg_wrW,br_taken,
     input logic  [1:0] wb_sel,
     input  logic [4:0] raddr1D,raddr2D,raddr1E,raddr2E,waddrE,waddrM,waddrW,
-    output logic       StallF,StallD, 
+    output logic       StallF,StallD,FlushD,FlushE, 
     output logic [1:0] forwardAE,forwardBE
     
 );
@@ -57,6 +57,14 @@ end
 
 //Hazard detecting for flushing 
 always_comb begin begin
+  if ( br_taken ) begin
+    FlushD = 1'b1;
+    FlushE = FlushD;
+  end
+  else begin
+    FlushD = 1'b0;
+    FlushE = FlushD;
+  end
   
 end
   

@@ -1,6 +1,6 @@
 module TopLevel (input logic clk,rst);
 
-    logic        reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken;
+    logic        reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken,StallF,StallD,FlushD,FlushE;
     logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW,forwardAE,forwardBE;
     logic [2:0]  ImmSrcD,funct3,funct3E,funct3M;
     logic [3:0]  mask;
@@ -8,11 +8,10 @@ module TopLevel (input logic clk,rst);
     logic [6:0]  instr_opcode,instr_opcodeE,instr_opcodeM;
     logic [31:0] Addr,AddrD,AddrE,AddrM,AddrW,AddrWB,PC,Inst,InstD,InstE,InstM,InstW,PCF,wdata,rdata1,rdata1E,rdata2,rdata2E,rdata2M,ImmExtD,ImmExtE,SrcA,SrcAE,SrcB,SrcBE,ALUResult,ALUResultM,ALUResultW,rdata,rdataW,data_rd,addr,data_wr;
 
-
 Mux_PC MuxPC(
     .br_taken(br_taken),
     .PCF(PCF),
-    .ALUResultM(ALUResultM),
+    .ALUResultM(ALUResult),
     .PC(PC));
 
 PCPlus4 PCplus4 (
@@ -22,6 +21,7 @@ PCPlus4 PCplus4 (
 program_counter ProgCouner (
     .clk(clk),
     .rst(rst),
+    .StallF(StallF),
     .PC(PC),
     .Addr(Addr));
 
@@ -32,6 +32,8 @@ Instruction_Memory InstMem(
 first_register FirstReg(
     .clk(clk),
     .rst(rst),
+    .StallD(StallD),
+    .FlushD(FlushD),
     .Addr(Addr),
     .Inst(Inst),
     .AddrD(AddrD),
@@ -65,6 +67,7 @@ second_register SecondReg(
     .reg_wr(reg_wr),
     .sel_A(sel_A),
     .sel_B(sel_B),
+    .FlushE(FlushE),
     .wb_sel(wb_sel),
     .funct3(funct3),
     .alu_op(alu_op),
@@ -141,6 +144,7 @@ third_register ThirdReg(
     .wb_selE(wb_selE),
     .funct3E(funct3E),
     .waddrE(waddrE),
+    .SrcB(SrcB),
     .instr_opcodeE(instr_opcodeE),
     .AddrE(AddrE),
     .ALUResult(ALUResult),
@@ -225,14 +229,22 @@ controller Controller(
 Hazard_Unit HazardUnit(
     .reg_wrM(reg_wrM),
     .reg_wrW(reg_wrW),
+    .br_taken(br_taken),
+    .wb_sel(wb_selE),
+    .raddr1D(raddr1D),
+    .raddr2D(raddr2D),
     .raddr1E(raddr1E),
     .raddr2E(raddr2E),
+    .waddrE(waddrE),
     .waddrM(waddrM),
     .waddrW(waddrW),
+    .StallF(StallF),
+    .StallD(StallD),
+    .FlushD(FlushD),
+    .FlushE(FlushE),
     .forwardAE(forwardAE),
     .forwardBE(forwardBE)
 );
-
 
 
 endmodule

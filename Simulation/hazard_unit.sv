@@ -44,8 +44,7 @@ module Hazard_Unit (
 // // Hazard detection for Stalling
 
 always_comb begin 
-    //   lwStall <= (ResultSrcE[0] & ((Rs1D == RdE) | (Rs2D == RdE)));//Page 450
-    if (( ( wb_sel == 2'b10 ) & ((raddr1D == waddrE) | (raddr2D == waddrE))) ) begin 
+    if (( ( wb_sel == 2'b10 ) & ((raddr1D == waddrE) | (raddr2D == waddrE))  )) begin 
         StallD       = 1'b1;
         StallF       = StallD;   
     end
@@ -54,30 +53,13 @@ always_comb begin
         StallF       = StallD;   
 
     end
-
-
-
 end
 
-
-  // always_comb begin//Stall when a load hazard occur
-  //   lwStall <= (ResultSrcE[0] & ((Rs1D == RdE) | (Rs2D == RdE)));//Page 450 
-  //   StallD <= lwStall;
-  //   StallF <= lwStall;
-  //   //Flush When a branch is taken or a load initroduces a bubble
-  //   FlushE <= lwStall | PCSrcE;
-  //   FlushD <= PCSrcE;
-  // end
-
-
-
-
-
-
-// //Flush When a branch is taken or a load initroduces a bubble
-// always_comb begin
-//    if (PCsrc)
-//       Flush  = 1'b1;
-// end
+//Hazard detecting for flushing 
+always_comb begin begin
+  
+end
+  
+end
 
 endmodule

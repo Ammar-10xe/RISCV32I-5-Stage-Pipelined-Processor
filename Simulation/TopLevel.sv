@@ -21,6 +21,7 @@ PCPlus4 PCplus4 (
 program_counter ProgCouner (
     .clk(clk),
     .rst(rst),
+    .StallF(StallF),
     .PC(PC),
     .Addr(Addr));
 
@@ -31,6 +32,7 @@ Instruction_Memory InstMem(
 first_register FirstReg(
     .clk(clk),
     .rst(rst),
+    .StallD(StallD),
     .Addr(Addr),
     .Inst(Inst),
     .AddrD(AddrD),
@@ -140,6 +142,7 @@ third_register ThirdReg(
     .wb_selE(wb_selE),
     .funct3E(funct3E),
     .waddrE(waddrE),
+    .SrcB(SrcB),
     .instr_opcodeE(instr_opcodeE),
     .AddrE(AddrE),
     .ALUResult(ALUResult),
@@ -224,7 +227,7 @@ controller Controller(
 Hazard_Unit HazardUnit(
     .reg_wrM(reg_wrM),
     .reg_wrW(reg_wrW),
-    .wb_sel(wb_sel),
+    .wb_sel(wb_selE),
     .raddr1D(raddr1D),
     .raddr2D(raddr2D),
     .raddr1E(raddr1E),

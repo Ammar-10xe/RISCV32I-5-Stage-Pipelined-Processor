@@ -4,7 +4,7 @@ module third_register (
     input logic  [2:0]  funct3E,
     input logic  [4:0]  waddrE,
     input logic  [6:0]  instr_opcodeE,
-    input logic  [31:0] AddrE,ALUResult,rdata2E,InstE,
+    input logic  [31:0] AddrE,ALUResult,rdata2E,InstE,SrcB,
     output logic        reg_wrM,
     output logic [1:0]  wb_selM,
     output logic [2:0]  funct3M,
@@ -30,7 +30,7 @@ module third_register (
     else begin
         AddrM         <= AddrE;
         ALUResultM    <= ALUResult;
-        rdata2M       <= rdata2E;
+        rdata2M       <=  SrcB;
         InstM         <= InstE;
         reg_wrM       <= reg_wrE;
         wb_selM       <= wb_selE;

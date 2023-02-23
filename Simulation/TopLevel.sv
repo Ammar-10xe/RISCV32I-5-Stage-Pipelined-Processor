@@ -1,6 +1,6 @@
 module TopLevel (input logic clk,rst);
 
-    logic        reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken,StallF,StallD,FlushD,FlushE;
+    logic        reg_wr,reg_wrE,reg_wrM,reg_wrW,sel_A,sel_AE,sel_B,sel_BE,cs,wr,br_taken,br_takenM,StallF,StallD,FlushD,FlushE;
     logic [1:0]  wb_sel,wb_selE,wb_selM,wb_selW,forwardAE,forwardBE;
     logic [2:0]  ImmSrcD,funct3,funct3E,funct3M;
     logic [3:0]  mask;
@@ -9,7 +9,7 @@ module TopLevel (input logic clk,rst);
     logic [31:0] Addr,AddrD,AddrE,AddrM,AddrW,AddrWB,PC,Inst,InstD,InstE,InstM,InstW,PCF,wdata,rdata1,rdata1E,rdata2,rdata2E,rdata2M,ImmExtD,ImmExtE,SrcA,SrcAE,SrcB,SrcBE,ALUResult,ALUResultM,ALUResultW,rdata,rdataW,data_rd,addr,data_wr;
 
 Mux_PC MuxPC(
-    .br_taken(br_taken),
+    .br_takenM(br_taken),
     .PCF(PCF),
     .ALUResultM(ALUResult),
     .PC(PC));
@@ -141,6 +141,7 @@ third_register ThirdReg(
     .clk(clk),
     .rst(rst),
     .reg_wrE(reg_wrE),
+    .br_taken(br_taken),
     .wb_selE(wb_selE),
     .funct3E(funct3E),
     .waddrE(waddrE),
@@ -151,6 +152,7 @@ third_register ThirdReg(
     .rdata2E(rdata2E),
     .InstE(InstE),
     .reg_wrM(reg_wrM),
+    .br_takenM(br_takenM),
     .wb_selM(wb_selM),
     .funct3M(funct3M),
     .waddrM(waddrM),

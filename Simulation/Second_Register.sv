@@ -2,7 +2,7 @@ module second_register (
     input  logic         clk,rst,reg_wr,sel_A,sel_B,FlushE,
     input  logic [1:0]  wb_sel,
     input  logic [2:0]  funct3,
-    input  logic [4:0]  alu_op,raddr1,raddr1D,raddr2D,waddrD,
+    input  logic [4:0]  alu_op,raddr1D,raddr2D,waddrD,
     input  logic [6:0]  instr_opcode,
     input  logic [31:0] AddrD,rdata1,rdata2,ImmExtD,InstD,
     output logic        reg_wrE,sel_AE,sel_BE,

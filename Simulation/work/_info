@@ -44,6 +44,7 @@ R0
 R0
 R0
 R0
+R0
 !s11f vlog 2021.1 2021.01, Jan 19 2021
 13
 !s112 1.1
@@ -53,26 +54,25 @@ R0
 cModel Technology
 Z1 dC:/questasim64_2021.1/examples
 T_opt
-!s110 1677158301
-V102:m@EbDFA9O;F=>BJZJ0
+!s110 1677838304
+VA2l[hBS`zC9I]h9UY3GfS3
 Z2 04 11 4 work TopLevel_tb fast 0
-=1-3822e2f179b7-63f7679c-2a8-a9c0
+=1-3822e2f179b7-6401c7de-215-3774
 Z3 !s124 OEM100
-Z4 o-quiet -auto_acc_if_foreign -work work +acc
-Z5 tCvgOpt 0
+o-quiet -auto_acc_if_foreign -work work
+Z4 tCvgOpt 0
 n@_opt
-Z6 OL;O;2021.1;73
-R1
+Z5 OL;O;2021.1;73
 T_opt1
 !s110 1677055745
 VADICgz87l[;6K[@S<SSW]2
 R2
 =2-3822e2f179b7-63f5d700-2e1-4e18
 R3
+Z6 o-quiet -auto_acc_if_foreign -work work +acc
 R4
-R5
 n@_opt1
-R6
+R5
 R1
 T_opt2
 !s110 1677091738
@@ -80,626 +80,626 @@ V0JC]i70G1H[>i9lgc>0=00
 R2
 =1-3822e2f179b7-63f66399-269-a5c8
 R3
-R4
-R5
-n@_opt2
 R6
+R4
+n@_opt2
+R5
 R1
 vAddrW_Plus4
 Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-!s110 1677158284
+Z8 !s110 1677838226
 !i10b 1
 !s100 X90aE>4Xa73ERnc?Kk>no3
-I0JOEC;6GTU0<<0m^EccSO1
+Iod`hkiA;IU6KDFVAWeX7:0
 S1
-Z8 dC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation
+Z9 dC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation
 w1676838450
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/AddrW_Plus4.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/AddrW_Plus4.sv
-!i122 2535
-Z9 L0 1 8
-Z10 VDg1SIo80bB@j0V0VzS_@n1
-Z11 OL;L;2021.1;73
+8AddrW_Plus4.sv
+FAddrW_Plus4.sv
+!i122 2563
+Z10 L0 1 8
+Z11 VDg1SIo80bB@j0V0VzS_@n1
+Z12 OL;L;2021.1;73
 r1
 !s85 0
 31
-!s108 1677158284.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/AddrW_Plus4.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/AddrW_Plus4.sv|
+Z13 !s108 1677838225.000000
+Z14 !s107 TopLevel_tb.sv|TopLevel.sv|Third_Register.sv|Second_Register.sv|Register_file.sv|program_Counter.sv|PCPlus4.sv|mux_selB.sv|mux_selA.sv|MuxResult.sv|MuxPC.sv|LoadStore_Unit.sv|Instruction_Memory.sv|instruction fetch.sv|Immediate_Gen.sv|hazard_unit.sv|Fourth_Register.sv|forward_muxB.sv|forward_muxA.sv|First_Register.sv|Data_Memory.sv|controller.sv|BranchCond.sv|ALU.sv|AddrW_Plus4.sv|
+Z15 !s90 AddrW_Plus4.sv|ALU.sv|BranchCond.sv|controller.sv|Data_Memory.sv|First_Register.sv|forward_muxA.sv|forward_muxB.sv|Fourth_Register.sv|hazard_unit.sv|Immediate_Gen.sv|instruction fetch.sv|Instruction_Memory.sv|LoadStore_Unit.sv|MuxPC.sv|MuxResult.sv|mux_selA.sv|mux_selB.sv|PCPlus4.sv|program_Counter.sv|Register_file.sv|Second_Register.sv|Third_Register.sv|TopLevel.sv|TopLevel_tb.sv|
 !i113 0
-Z12 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R5
+Z16 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R4
 n@addr@w_@plus4
 vALU
 R7
-Z13 !s110 1677158285
+R8
 !i10b 1
 !s100 F?K?obY^:0_:l^V<jAFBX2
-I<ET785ohX9k3gT25Chhc_3
+I>V@`DM?^S:5?1LR9e10Q@3
 S1
-R8
+R9
 w1676999842
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/ALU.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/ALU.sv
-!i122 2536
-Z14 L0 1 37
-R10
+8ALU.sv
+FALU.sv
+!i122 2563
+Z17 L0 1 37
 R11
+R12
 r1
 !s85 0
 31
-Z15 !s108 1677158285.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/ALU.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/ALU.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@a@l@u
 vBranchCond
 R7
-R13
+R8
 !i10b 1
 !s100 YF`D7`X>iFUjmoGiT4j?B1
-IaJfB<aZe4=ECLDHLPX?5K3
+IR>[i6N4@D?V6`h]SiI4VJ2
 S1
-R8
+R9
 w1677000387
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/BranchCond.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/BranchCond.sv
-!i122 2537
-Z16 L0 1 45
-R10
+8BranchCond.sv
+FBranchCond.sv
+!i122 2563
+Z18 L0 1 45
 R11
+R12
 r1
 !s85 0
 31
+R13
+R14
 R15
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/BranchCond.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/BranchCond.sv|
 !i113 0
-R12
-R5
+R16
+R4
 n@branch@cond
 vcontroller
 R7
-R13
+R8
 !i10b 1
 !s100 Wk]Tm[AaabL84V3[<48hi0
-IkIOTdGPnSOo2c>@?0QnCX2
+Il0b2XjS2TL<?>E<KPDb9=1
 S1
-R8
+R9
 w1677013040
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/controller.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/controller.sv
-!i122 2538
+8controller.sv
+Fcontroller.sv
+!i122 2563
 L0 1 156
-R10
 R11
+R12
 r1
 !s85 0
 31
+R13
+R14
 R15
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/controller.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/controller.sv|
 !i113 0
-R12
-R5
+R16
+R4
 vData_Memory
 R7
-Z17 !s110 1677158286
+R8
 !i10b 1
 !s100 jO80g0l[4JLMnE621YK^C3
-I__iI:njD[VU2bfo7D18SQ1
+ITU@f<8fn=nTfzMLiZnRBd2
 S1
-R8
-Z18 w1676829494
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Data_Memory.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Data_Memory.sv
-!i122 2539
+R9
+w1676829494
+8Data_Memory.sv
+FData_Memory.sv
+!i122 2563
 L0 1 22
-R10
 R11
+R12
 r1
 !s85 0
 31
+R13
+R14
 R15
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Data_Memory.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Data_Memory.sv|
 !i113 0
-R12
-R5
+R16
+R4
 n@data_@memory
 vfirst_register
 R7
-R17
+R8
 !i10b 1
 !s100 [Vf@O5L_3@o<o6fnAQzhe3
-IW?N^g6W=bPhCocDicYEd?3
+I>_`[?PQaKBdSZ6NU8FZEc1
 S1
-R8
+R9
 w1677054467
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/First_Register.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/First_Register.sv
-!i122 2540
+8First_Register.sv
+FFirst_Register.sv
+!i122 2563
 L0 1 27
-R10
 R11
+R12
 r1
 !s85 0
 31
-Z19 !s108 1677158286.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/First_Register.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/First_Register.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 vforward_muxA
 R7
-Z20 !s110 1677158328
+R8
 !i10b 1
 !s100 EHdoJR4;dP[f_en9a24J13
-Im@>R@LfzcU`I``LJ;MN7k2
+IW>C0;7bXmYPe0IGVXD?dX1
 S1
-R8
+R9
 w1676999979
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/forward_muxA.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/forward_muxA.sv
-!i122 2557
-Z21 L0 1 13
-R10
+8forward_muxA.sv
+Fforward_muxA.sv
+!i122 2563
+Z19 L0 1 13
 R11
+R12
 r1
 !s85 0
 31
-Z22 !s108 1677158328.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/forward_muxA.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/forward_muxA.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 nforward_mux@a
 vforward_muxB
 R7
-R20
+R8
 !i10b 1
 !s100 79_:84:DJ5imdN4foC0Kj2
-ICRF^AWYGL9T:8Jbc5lZM?2
+I^A4QRJTM`GIXTOiKK<@9A0
 S1
-R8
+R9
 w1677000057
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/forward_muxB.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/forward_muxB.sv
-!i122 2558
-R21
-R10
+8forward_muxB.sv
+Fforward_muxB.sv
+!i122 2563
+R19
 R11
+R12
 r1
 !s85 0
 31
-R22
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/forward_muxB.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/forward_muxB.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 nforward_mux@b
 vfourt_register
 R7
-R17
+R8
 !i10b 1
 !s100 =V^ZOz6;Z2KLV0EKQLG<N1
-I618zfY_H_CFG1O_Vm4TM_2
+IEH<;K:IhcBk^N?dFza@Yj1
 S1
-R8
+R9
 w1677005414
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Fourth_Register.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Fourth_Register.sv
-!i122 2541
-R14
-R10
+8Fourth_Register.sv
+FFourth_Register.sv
+!i122 2563
+R17
 R11
+R12
 r1
 !s85 0
 31
-R19
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Fourth_Register.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Fourth_Register.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 vHazard_Unit
 R7
-!s110 1677158329
+R8
 !i10b 1
 !s100 ?A7jEYLKCjCoMFRPLX4zl3
-I@V2H;X;2_a7Z2BMLkNEbU0
+IfkPjEdBKi8i^TeY>550N`2
 S1
-R8
+R9
 w1677051557
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/hazard_unit.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/hazard_unit.sv
-!i122 2559
+8hazard_unit.sv
+Fhazard_unit.sv
+!i122 2563
 L0 1 73
-R10
 R11
+R12
 r1
 !s85 0
 31
-!s108 1677158329.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/hazard_unit.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/hazard_unit.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@hazard_@unit
 vimmediate_gen
 R7
-R17
+R8
 !i10b 1
 !s100 jjVgB7JTQi`z>JK29UV8]2
-IY=3A?5h>i:IQ9]jSO6]>V0
+I<Pz2JW?8<diWJ[`RDCf@C3
 S1
-R8
+R9
 w1676831792
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Immediate_Gen.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Immediate_Gen.sv
-!i122 2542
+8Immediate_Gen.sv
+FImmediate_Gen.sv
+!i122 2563
 L0 1 26
-R10
 R11
+R12
 r1
 !s85 0
 31
-R19
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Immediate_Gen.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Immediate_Gen.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 vInstruction_Fetch
 R7
-Z23 !s110 1677158287
+R8
 !i10b 1
 !s100 ?XS_kX4a]adCYHnBHRT=a3
-IIXDSfa]QmlkI:c7Fb>8h:2
+IlO@d9B`KPnzPmb3=e26_F2
 S1
-R8
+R9
 w1677006560
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/instruction fetch.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/instruction fetch.sv
-!i122 2543
+8instruction fetch.sv
+Finstruction fetch.sv
+!i122 2563
 L0 1 11
-R10
 R11
+R12
 r1
 !s85 0
 31
-R19
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/instruction fetch.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/instruction fetch.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@instruction_@fetch
 vInstruction_Memory
 R7
-R23
-!i10b 1
-!s100 cM9Yo43jgQOEJeKo5Gz3C0
-IPiD^_aCX9<74PgC`n8jh]3
-S1
 R8
-R18
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Instruction_Memory.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Instruction_Memory.sv
-!i122 2544
-R21
-R10
+!i10b 1
+!s100 heQW222RR:3oFBi8=HJ9>0
+I6fVYfQlW^HYReH8g1ZlF;0
+S1
+R9
+w1677802064
+8Instruction_Memory.sv
+FInstruction_Memory.sv
+!i122 2563
+L0 1 19
 R11
+R12
 r1
 !s85 0
 31
-Z24 !s108 1677158287.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Instruction_Memory.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Instruction_Memory.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@instruction_@memory
 vLoadStore_Unit
 R7
-R23
+R8
 !i10b 1
 !s100 HhcM^BQ?z;784VNCzHzNF0
-IYhV;OQflnXekk0dbiJeMm3
+IQR[>0`CBAVMEGa;ehjJf?3
 S1
-R8
+R9
 w1676985962
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/LoadStore_Unit.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/LoadStore_Unit.sv
-!i122 2545
+8LoadStore_Unit.sv
+FLoadStore_Unit.sv
+!i122 2563
 L0 1 121
-R10
 R11
+R12
 r1
 !s85 0
 31
-R24
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/LoadStore_Unit.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/LoadStore_Unit.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@load@store_@unit
 vMux_PC
 R7
-Z25 !s110 1677158288
+R8
 !i10b 1
 !s100 ^A>ZK5?mW^BJ^6FVh_fcJ1
-IZm`^0KBjJ7UFbIUiHTRGS0
+Ii6AYUDPHEE46UX?mCj9YC0
 S1
-R8
+R9
 w1677091012
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxPC.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxPC.sv
-!i122 2548
-Z26 L0 1 14
-R10
+8MuxPC.sv
+FMuxPC.sv
+!i122 2563
+Z20 L0 1 14
 R11
+R12
 r1
 !s85 0
 31
-Z27 !s108 1677158288.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxPC.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxPC.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@mux_@p@c
 vmux_selA
 R7
-R23
+R8
 !i10b 1
 !s100 ;6gjWon?Y=E`g4^0WSNiV3
-IB0=iJV9D1Ti[RUa9n7^FK0
+ILb6LO1LF=S@IPgQm>A;C=2
 S1
-R8
+R9
 w1676999935
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/mux_selA.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/mux_selA.sv
-!i122 2546
+8mux_selA.sv
+Fmux_selA.sv
+!i122 2563
 L0 1 12
-R10
 R11
+R12
 r1
 !s85 0
 31
-R24
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/mux_selA.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/mux_selA.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 nmux_sel@a
 vmux_selB
 R7
-R25
+R8
 !i10b 1
 !s100 c1hfbe:9@bZj[_FN^L4gH1
-I8bT4`J_z748P<m`N<VQFS1
+Id^VPk7zmc^fkJi`En^C`23
 S1
-R8
+R9
 w1677000116
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/mux_selB.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/mux_selB.sv
-!i122 2547
-Z28 L0 1 15
-R10
+8mux_selB.sv
+Fmux_selB.sv
+!i122 2563
+Z21 L0 1 15
 R11
+R12
 r1
 !s85 0
 31
-R27
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/mux_selB.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/mux_selB.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 nmux_sel@b
 vMuxResult
 R7
-Z29 !s110 1677158289
+R8
 !i10b 1
 !s100 ?BBH3CJME8d?:]YfXMNE92
-IJc_NmcaY^2lbBn13izbXi3
+IM8h8zDce^AJCMHUeGlJ7]0
 S1
-R8
+R9
 w1677008136
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxResult.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxResult.sv
-!i122 2549
-R26
-R10
+8MuxResult.sv
+FMuxResult.sv
+!i122 2563
+R20
 R11
+R12
 r1
 !s85 0
 31
-Z30 !s108 1677158289.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxResult.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/MuxResult.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@mux@result
 vPCPlus4
 R7
-R29
+R8
 !i10b 1
 !s100 dh[jHS`Z[D5bENBOQHBSY2
-IWL=Kbl;=IK04@eY8LcgF_0
+IPdDlXH?7PT0M<eF2UGZQ]3
 S1
-R8
-w1676835275
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/PCPlus4.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/PCPlus4.sv
-!i122 2550
 R9
+w1676835275
+8PCPlus4.sv
+FPCPlus4.sv
+!i122 2563
 R10
 R11
+R12
 r1
 !s85 0
 31
-R30
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/PCPlus4.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/PCPlus4.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@p@c@plus4
 vprogram_counter
 R7
-Z31 !s110 1677158290
+R8
 !i10b 1
 !s100 ]hZ0bhDm^UgM=]<eYXI[f1
-IjMZ6FQBo04]Pf><KCj<YK0
+IoAKLllBeGdNig0nZ^BXEG2
 S1
-R8
+R9
 w1677011281
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/program_Counter.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/program_Counter.sv
-!i122 2551
-R28
-R10
+8program_Counter.sv
+Fprogram_Counter.sv
+!i122 2563
+R21
 R11
+R12
 r1
 !s85 0
 31
-Z32 !s108 1677158290.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/program_Counter.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/program_Counter.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 vRegister_file
 R7
-R31
+R8
 !i10b 1
 !s100 ChHWz@P8>TzdUVEzmaB9m1
-IhzM19b5X=Ch8W=@8nF8ZI3
+I9E?a`gb@g:K3>>l`0L^?c1
 S1
-R8
+R9
 w1676989203
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Register_file.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Register_file.sv
-!i122 2552
+8Register_file.sv
+FRegister_file.sv
+!i122 2563
 L0 1 29
-R10
 R11
+R12
 r1
 !s85 0
 31
-R32
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Register_file.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Register_file.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@register_file
 vsecond_register
 R7
-Z33 !s110 1677158291
+R8
 !i10b 1
 !s100 7SQBP`7dn8FhKE5^FZbhT0
-Ib@<D9Jh4>Aae[la0h8NmV1
+IbF4zzcd]6GllD2[jgnXFJ0
 S1
-R8
+R9
 w1677091128
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Second_Register.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Second_Register.sv
-!i122 2553
+8Second_Register.sv
+FSecond_Register.sv
+!i122 2563
 L0 1 75
-R10
 R11
+R12
 r1
 !s85 0
 31
-Z34 !s108 1677158291.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Second_Register.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Second_Register.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 vthird_register
 R7
-R33
+R8
 !i10b 1
 !s100 P14YE>GFJQJ9=aom@XaGl1
-I5>82<Y<BBn65YbO9B:m9a2
+IXfmkO0<eSVWd>QgV]W`3A3
 S1
-R8
+R9
 w1677090767
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Third_Register.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Third_Register.sv
-!i122 2554
-R16
-R10
+8Third_Register.sv
+FThird_Register.sv
+!i122 2563
+R18
 R11
+R12
 r1
 !s85 0
 31
-R34
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Third_Register.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/Third_Register.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 vTopLevel
 R7
-!s110 1677158292
+R8
 !i10b 1
 !s100 7Dac`:IETVHOk`;M:>T3c2
-Ib>L^6eG>FW2l]XMJ;mP1@1
+I1^PTc:^6M_iZe3G6UaZO:0
 S1
-R8
+R9
 w1677158275
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel.sv
-!i122 2555
+8TopLevel.sv
+FTopLevel.sv
+!i122 2563
 L0 1 252
-R10
 R11
+R12
 r1
 !s85 0
 31
-!s108 1677158292.000000
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@top@level
 vTopLevel_tb
 R7
-R20
-!i10b 1
-!s100 bVY]5B<VjC83=VzVzUkXF2
-IjdzF8@=I3OAU1]4ejULEA0
-S1
 R8
-R18
-8C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel_tb.sv
-FC:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel_tb.sv
-!i122 2556
-L0 1 19
-R10
+!i10b 1
+!s100 D0E1IN0l`E2S?RAOQjl2l1
+I:FN[Iz[H769OYV_HB`m6X0
+S1
+R9
+w1677802617
+8TopLevel_tb.sv
+FTopLevel_tb.sv
+!i122 2563
+L0 1 62
 R11
+R12
 r1
 !s85 0
 31
-R22
-!s107 C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel_tb.sv|
-!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/2019E/OneDrive/Desktop/5stageonlypipe_register/RISCV32I-5-Stage-Pipelined-Processor/Simulation/TopLevel_tb.sv|
+R13
+R14
+R15
 !i113 0
-R12
-R5
+R16
+R4
 n@top@level_tb
